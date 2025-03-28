@@ -31,6 +31,7 @@ public class LoginPage {
 		String url = getAppUrl();
 		System.out.println(url);
 		Assert.assertTrue(url.contains("dashboard"), "Login was Successful");
+		//driver.findElement(By.xpath("//button[@type='button']")).click();
 	}
 
 	public String getAppTitle() {

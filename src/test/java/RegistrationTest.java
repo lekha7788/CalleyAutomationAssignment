@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class RegistrationTest extends BaseClass {
 	@Test
 	public void verifyRegistration() throws InterruptedException {
-		 rp.doRegister("https://app.getcalley.com/registration.aspx","Lekha1", "lekhaharish05@gmail.com", "lekha123", "01234567890");
+		 rp.doRegister("https://app.getcalley.com/registration.aspx","Lekha2", "lekha2@gmail.com", "lekha123", "01234567890");
 		WebElement confirmMsg = driver.findElement(By.xpath("//button[@class='confirm']"));
 		String msg = confirmMsg.getText();
 		System.out.println(msg);
